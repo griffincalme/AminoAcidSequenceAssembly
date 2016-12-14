@@ -8,6 +8,8 @@ Edit the RunProteinSequenceAssembly.py with your line-separated text file of pep
 ###ProteinSequenceAssemblyLib.py 
 Contains functions for the "RunProteinSequenceAssembly.py" script.
 
+
+
 ##Validation Folder
 
 ###ProteinSequenceAssembly_NW_Validation.py
