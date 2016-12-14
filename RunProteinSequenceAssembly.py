@@ -1,6 +1,6 @@
 #This is the user-interface for the protein sequence assembly library
 
-from DeNovoAAseq.ProteinSequenceAssemblyLib import open_fragment_library, sequence_assembler
+from ProteinSequenceAssemblyLib import open_fragment_library, sequence_assembler
 
 filepath = 'YOUR_LINE_SEPARATED_PEPTIDES.txt'   # Put your filepath here (line-separated sequences)
 my_library = open_fragment_library(filepath)
