@@ -1,0 +1,33 @@
+# Written by Griffin Calme (2016)
+# Generates random fragments of a randomly generated peptide
+
+import random
+
+amino_acids = 'ACDEFGHIKLMNPQRSTVWY'
+original_sequence_length = 50
+max_subsequence_length = 8
+min_subsequence_length = 7
+
+sequence = ''.join(random.choice(amino_acids) for i in range(original_sequence_length))  # Original supersequence
+
+print(sequence + '\n')
+
+subsequence_number = 5000  # The number of randomly generated fragments
+subsequence_library = []  # The library of generated subsequences/fragments
+#subsequence_library = [sequence]  # Make the first list element the original supersequence, for testing & validation
+
+for i in range(0, subsequence_number):
+    subsequence_length = random.randrange(min_subsequence_length, max_subsequence_length+1)  # Random fragment length
+
+    start = random.randint(0, original_sequence_length - subsequence_length)  # Random starting point for slice
+    end = start + subsequence_length  # Ending point for slice
+
+    subsequence = sequence[start:end]  #  Create the sliced subsequence
+    subsequence_library.append(subsequence)  # Append to the subsequence library
+
+print(subsequence_library)
+
+with open('random_sequences.txt','w') as f:
+    subsequence_string = '\n'.join(subsequence_library)     # Join subsequences by a newline, then save as txt
+    f.write(subsequence_string)
+
