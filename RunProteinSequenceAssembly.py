@@ -2,7 +2,7 @@
 
 from DeNovoAAseq.ProteinSequenceAssemblyLib import open_fragment_library, sequence_assembler
 
-filepath = 'IP_IRS1.txt'   # Put your filepath here (line-separated sequences)
+filepath = 'YOUR_LINE_SEPARATED_PEPTIDES.txt'   # Put your filepath here (line-separated sequences)
 my_library = open_fragment_library(filepath)
 
 # sequence_assembler returns two lists, one with the assembled peptides and one with the leftover non-matching peptides
