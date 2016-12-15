@@ -16,4 +16,4 @@ Contains functions for the "RunProteinSequenceAssembly.py" script.
 Validates the algorithm by generating random polypeptides, randomly fragmenting them (in silico fragmentation), and running the assembly on the resulting subsequences. Probably needs more improvement.
 
 ###FragmentationSimulator.py
-Generates a random polypeptide and then fragments (in silico) at random combinations of sites. Outputs the simulated fragments in a txt file.
+Generates a random polypeptide and then fragments in silico at random combinations of sites. Outputs the simulated fragments in a txt file.
